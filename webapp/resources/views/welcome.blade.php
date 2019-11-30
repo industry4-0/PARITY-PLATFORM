@@ -5,7 +5,7 @@
 <style>
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 39, 39, 0.7);
+  --left-bg-color: rgba(157, 74, 0, 0.7);
   --left-button-hover-color: rgba(161, 11, 11, 0.3);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
@@ -147,9 +147,48 @@ h1 {
     top: 70%;
   }
 }
+
+/* navbar */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
 </style>
 </head>
 <body>
+
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+
 <div class="container">
   <div class="split left">
     <h1>The Designer</h1>
