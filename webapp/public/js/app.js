@@ -2022,19 +2022,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     source: String
@@ -2122,6 +2109,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2139,7 +2140,8 @@ __webpack_require__.r(__webpack_exports__);
         return /.+@.+\..+/.test(v) || 'E-mail must be valid';
       }],
       select: null,
-      items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+      items: ['Solar', 'Wind'],
+      capacity: '',
       checkbox: false
     };
   },
@@ -38260,7 +38262,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "a",
-              { attrs: { href: "/producers" } },
+              { attrs: { href: "/producers/create" } },
               [
                 _c(
                   "v-list-item",
@@ -38430,26 +38432,8 @@ var render = function() {
         [
           _c(
             "v-container",
-            { staticClass: "fill-height", attrs: { fluid: "" } },
-            [
-              _c(
-                "v-row",
-                { attrs: { align: "center", justify: "center" } },
-                [
-                  _c(
-                    "v-col",
-                    { staticClass: "shrink" },
-                    [
-                      _c("v-tooltip", { attrs: { right: "" } }),
-                      _vm._v(" "),
-                      _c("v-tooltip", { attrs: { right: "" } })
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
+            { attrs: { fluid: "", "fill-height": "" } },
+            [_c("v-layout", [_vm._t("default")], 2)],
             1
           )
         ],
@@ -38505,7 +38489,7 @@ var render = function() {
         attrs: {
           counter: 10,
           rules: _vm.nameRules,
-          label: "Name",
+          label: "Project Name",
           required: ""
         },
         model: {
@@ -38536,7 +38520,7 @@ var render = function() {
               return !!v || "Item is required"
             }
           ],
-          label: "Item",
+          label: "Technology",
           required: ""
         },
         model: {
@@ -38547,6 +38531,37 @@ var render = function() {
           expression: "select"
         }
       }),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "4" } },
+            [_c("v-subheader", [_vm._v("Capcity")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "8" } },
+            [
+              _c("v-text-field", {
+                attrs: { label: "", value: "1.00", suffix: "MW" },
+                model: {
+                  value: _vm.capacity,
+                  callback: function($$v) {
+                    _vm.capacity = $$v
+                  },
+                  expression: "capacity"
+                }
+              })
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c("v-checkbox", {
         attrs: {

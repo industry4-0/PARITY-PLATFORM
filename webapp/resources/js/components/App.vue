@@ -16,7 +16,7 @@
             </v-list-item-content>
           </v-list-item>
         </a>
-        <a href="/producers">
+        <a href="/producers/create">
           <v-list-item link>
             <v-list-item-action>
               <v-icon>mdi-view-dashboard</v-icon>
@@ -84,23 +84,10 @@
     </v-app-bar>
 
     <v-content>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col class="shrink">
-            <v-tooltip right>
-              
-            </v-tooltip>
-            <v-tooltip right>
-              
-            </v-tooltip>
-          </v-col>
-        </v-row>
+      <v-container fluid fill-height>
+        <v-layout>
+          <slot></slot>
+        </v-layout>
       </v-container>
     </v-content>
 
