@@ -94,8 +94,8 @@
 
                             <div class="col-md-6">
                                 <select id="user_role" class="form-control" name="user_role" required value="{{ old('user_role') }}"> 
-                                    <option value="patient" selected> Producer </option>
-                                    <option value="doctor"> Doctor </option>
+                                    <option value="producer" selected> Producer </option>
+                                    <option value="buyer"> Buyer </option>
                                 </select>
                             </div>
                         </div>
