@@ -38,10 +38,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">{{ __('Σχετικά') }}</a>
+                            <a class="nav-link" href="/about">{{ __('Σχετικά') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('faq') }}">{{ __('Ερωτήσεις & Απαντήσεις') }}</a>
+                            <a class="nav-link" href="/faq">{{ __('Ερωτήσεις & Απαντήσεις') }}</a>
                         </li>
                     </ul>
 
