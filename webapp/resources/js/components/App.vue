@@ -26,7 +26,7 @@
             </v-list-item-content>
           </v-list-item>
         </a>
-        <a href="/buyers">
+        <a href="/buyers/create">
           <v-list-item link>
             <v-list-item-action>
               <v-icon>mdi-view-dashboard</v-icon>
