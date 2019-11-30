@@ -3,47 +3,11 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 
-// Custom icons
-import AllergyIcon from '../icons/AllergyIcon.vue'
-import CareplansIcon from '../icons/CareplansIcon.vue'
-import ImmunizationsIcon from '../icons/ImmunizationsIcon.vue'
-import LabIcon from '../icons/LabIcon.vue'
-import MedicationIcon from '../icons/MedicationIcon.vue'
-import ProblemsIcon from '../icons/ProblemsIcon.vue'
-import RecordsIcon from '../icons/RecordsIcon.vue'
-import VitalsIcon from '../icons/VitalsIcon.vue'
-
 Vue.use(Vuetify)
 
 export default new Vuetify({
     icons: {
         iconfont: 'mdi', // default - only for display purposes
-        values: {
-          allergies: {
-            component: AllergyIcon
-          },
-          careplans: {
-            component: CareplansIcon
-          },
-          immunizations: {
-            component: ImmunizationsIcon
-          },
-          lab: {
-            component: LabIcon
-          },
-          medication: {
-            component: MedicationIcon
-          },
-          problems: {
-            component: ProblemsIcon
-          },
-          records: {
-            component: RecordsIcon
-          },
-          vitals: {
-            component: VitalsIcon
-          }
-        },
     },
 
     breakpoint: {
