@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('vat_num');
-            $table->enum('role', ['producer', 'buyer']);
+            $table->enum('user_role', ['producer', 'buyer']);
             $table->rememberToken();
             $table->timestamps();
         });
