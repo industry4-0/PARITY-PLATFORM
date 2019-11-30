@@ -3,22 +3,23 @@
     <v-navigation-drawer
       v-model="drawer"
       app
+      clipped
     >
       <v-list dense>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
+            <v-icon>mdi-view-dashboard</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
+            <v-icon>mdi-settings</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
+            <v-list-item-title>Settings</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -26,8 +27,7 @@
 
     <v-app-bar
       app
-      color="indigo"
-      dark
+      clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Application</v-toolbar-title>
@@ -42,8 +42,8 @@
           align="center"
           justify="center"
         >
-          <v-col class="text-center">
-            <v-tooltip left>
+          <v-col class="shrink">
+            <v-tooltip right>
               <template v-slot:activator="{ on }">
                 <v-btn
                   :href="source"
@@ -57,30 +57,16 @@
               </template>
               <span>Source</span>
             </v-tooltip>
-
             <v-tooltip right>
-              <template v-slot:activator="{ on }">
-                <v-btn
-                  icon
-                  large
-                  href="https://codepen.io/johnjleider/pen/zgxeLQ"
-                  target="_blank"
-                  v-on="on"
-                >
-                  <v-icon large>mdi-codepen</v-icon>
-                </v-btn>
-              </template>
-              <span>Codepen</span>
+              
             </v-tooltip>
           </v-col>
         </v-row>
       </v-container>
     </v-content>
-    <v-footer
-      color="indigo"
-      app
-    >
-      <span class="white--text">&copy; 2019</span>
+
+    <v-footer app>
+      <span>&copy; 2019</span>
     </v-footer>
   </v-app>
 </template>
@@ -93,5 +79,8 @@
     data: () => ({
       drawer: null,
     }),
+    created () {
+      this.$vuetify.theme.dark = true
+    },
   }
 </script>

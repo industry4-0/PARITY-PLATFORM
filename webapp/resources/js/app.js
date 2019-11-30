@@ -29,4 +29,5 @@ Vue.component('producer', require('./components/Producer.vue').default);
 
 const app = new Vue({
     el: '#app',
+    vuetify
 });

@@ -47,5 +47,9 @@ export default new Vuetify({
         },
         scrollBarWidth: 24,
     },
+
+    theme: {
+        dark: true,
+    },
 })
 
