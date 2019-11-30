@@ -8,7 +8,7 @@
       v-model="name"
       :counter="10"
       :rules="nameRules"
-      label="Name"
+      label="Project Name"
       required
     ></v-text-field>
 
@@ -23,9 +23,23 @@
       v-model="select"
       :items="items"
       :rules="[v => !!v || 'Item is required']"
-      label="Item"
+      label="Technology"
       required
     ></v-select>
+
+    <v-row>
+      <v-col cols="4">
+        <v-subheader>Capcity</v-subheader>
+      </v-col>
+      <v-col cols="8">
+        <v-text-field
+          v-model="capacity"
+          label=""
+          value="1.00"
+          suffix="MW"
+        ></v-text-field>
+      </v-col>
+    </v-row>
 
     <v-checkbox
       v-model="checkbox"
@@ -76,11 +90,10 @@
       ],
       select: null,
       items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
+        'Solar',
+        'Wind',
       ],
+      capacity: '',
       checkbox: false,
     }),
 
