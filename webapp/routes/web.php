@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('producers', 'ProducerController');
+
+Route::resource('buyers', 'BuyerController');

@@ -24,7 +24,7 @@ class ProducerController extends Controller
      */
     public function create()
     {
-        //
+        return view('producers.create');
     }
 
     /**

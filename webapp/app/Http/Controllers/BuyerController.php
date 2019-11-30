@@ -24,7 +24,7 @@ class BuyerController extends Controller
      */
     public function create()
     {
-        //
+        return view('buyers.create');
     }
 
     /**
