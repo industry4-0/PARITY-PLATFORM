@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">New Buyer</div>
+<app>
+  <v-container grid list-md>
+    <v-layout wrap>
+      <v-flex xs12>
+        <h1 class="accent-text">{{ __('New Buyer') }}</h1>
+      </v-flex>
 
-                <div class="card-body">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      <v-flex xs12>
+        <buyer></buyer>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</app>
 @endsection
