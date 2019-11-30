@@ -8,24 +8,32 @@
       v-model="name"
       :counter="10"
       :rules="nameRules"
-      label="Project Name"
+      label="Plant Name"
       required
     ></v-text-field>
 
     <v-text-field
+      v-model="company"
+      :counter="10"
+      :rules="nameRules"
+      label="Company Name"
+      required
+    ></v-text-field>
+
+    <!-- <v-text-field
       v-model="email"
       :rules="emailRules"
       label="E-mail"
       required
-    ></v-text-field>
+    ></v-text-field> -->
 
-    <v-select
+    <!-- <v-select
       v-model="select"
       :items="items"
       :rules="[v => !!v || 'Item is required']"
       label="Technology"
       required
-    ></v-select>
+    ></v-select> -->
 
     <v-row>
       <v-col cols="4">
@@ -43,7 +51,7 @@
 
     <v-row>
       <v-col cols="4">
-        <v-subheader>Anual Expected Production</v-subheader>
+        <v-subheader>Anual Expected Demand</v-subheader>
       </v-col>
       <v-col cols="8">
         <v-text-field
@@ -69,13 +77,7 @@
       </v-col>
     </v-row>
 
-  <v-text-field
-      v-model="company"
-      :counter="10"
-      :rules="nameRules"
-      label="Management Company"
-      required
-    ></v-text-field>
+  
 
     <v-checkbox
       v-model="checkbox"
@@ -126,11 +128,7 @@ import axios from 'axios'
         v => !!v || 'E-mail is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
-      select: null,
-      items: [
-        'Solar',
-        'Wind',
-      ],
+     
       capacity: '',
       anexp: '',
       locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
@@ -141,10 +139,8 @@ import axios from 'axios'
     methods: {
       validate () {
         if (this.$refs.form.validate()) {
-          axios.post('/producers', {
+          axios.post('/buyers', {
           'name': this.name,
-          'email': this.email,
-          'select': this.select,
           'capacity': this.capacity,
           'anexp': this.anexp,
           'locations': this.locations,
