@@ -20,6 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 Vue.component('app', require('./components/App.vue').default);
 Vue.component('producer', require('./components/Producer.vue').default);
+Vue.component('matchmaking', require('./components/Matchmaking.vue').default);
 Vue.component('buyer', require('./components/Buyer.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to

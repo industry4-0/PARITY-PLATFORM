@@ -9,7 +9,9 @@
       </v-flex>
 
       <v-flex xs12>
-        
+        <matchmaking>
+          @csrf
+        </matchmaking>
       </v-flex>
     </v-layout>
   </v-container>
