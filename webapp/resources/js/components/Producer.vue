@@ -41,6 +41,20 @@
       </v-col>
     </v-row>
 
+    <v-row>
+      <v-col cols="4">
+        <v-subheader>Anual Expected Production</v-subheader>
+      </v-col>
+      <v-col cols="8">
+        <v-text-field
+          v-model="anexp"
+          label=""
+          value="1.00"
+          suffix="MWh"
+        ></v-text-field>
+      </v-col>
+    </v-row>
+
     <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
@@ -94,6 +108,7 @@
         'Wind',
       ],
       capacity: '',
+      anexp: '',
       checkbox: false,
     }),
 

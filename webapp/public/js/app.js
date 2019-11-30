@@ -2123,6 +2123,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2142,6 +2156,7 @@ __webpack_require__.r(__webpack_exports__);
       select: null,
       items: ['Solar', 'Wind'],
       capacity: '',
+      anexp: '',
       checkbox: false
     };
   },
@@ -38554,6 +38569,37 @@ var render = function() {
                     _vm.capacity = $$v
                   },
                   expression: "capacity"
+                }
+              })
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "4" } },
+            [_c("v-subheader", [_vm._v("Anual Expected Production")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "8" } },
+            [
+              _c("v-text-field", {
+                attrs: { label: "", value: "1.00", suffix: "MWh" },
+                model: {
+                  value: _vm.anexp,
+                  callback: function($$v) {
+                    _vm.anexp = $$v
+                  },
+                  expression: "anexp"
                 }
               })
             ],
@@ -88574,8 +88620,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify__WEBPACK_IMPORTED_MODULE_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/d/JOBS/PARITY/hackathons/industry4 2019/repository/webapp/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/d/JOBS/PARITY/hackathons/industry4 2019/repository/webapp/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/nickarad/Desktop/PARITY-PLATFORM/webapp/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/nickarad/Desktop/PARITY-PLATFORM/webapp/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
