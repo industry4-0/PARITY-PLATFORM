@@ -6,22 +6,56 @@
       clipped
     >
       <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <a href="/home">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-view-dashboard</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Dashboard</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
+        <a href="/producers">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-view-dashboard</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Producers</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
+        <a href="/buyers">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-view-dashboard</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Buyers</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
+        <a href="/home">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-view-dashboard</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Dashboard</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
+        <a href="/settings">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-settings</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Settings</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
       </v-list>
     </v-navigation-drawer>
 
@@ -30,7 +64,13 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title> Parity Industry 4.0 </v-toolbar-title>
+
+      <v-spacer></v-spacer>
+      
+      <v-btn icon onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        <v-icon>exit_to_app</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-content>
@@ -44,18 +84,7 @@
         >
           <v-col class="shrink">
             <v-tooltip right>
-              <template v-slot:activator="{ on }">
-                <v-btn
-                  :href="source"
-                  icon
-                  large
-                  target="_blank"
-                  v-on="on"
-                >
-                  <v-icon large>mdi-code-tags</v-icon>
-                </v-btn>
-              </template>
-              <span>Source</span>
+              
             </v-tooltip>
             <v-tooltip right>
               
@@ -66,7 +95,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2019</span>
+      <div>&copy; Parity Platform PC {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
 </template>
