@@ -28,5 +28,7 @@ Route::resource('producers', 'ProducerController');
 Route::resource('buyers', 'BuyerController');
 
 Route::get('/matchmaking', 'MatchmakingController@index');
+Route::post('/matchmaking/contract', 'MatchmakingController@generateContract');
 
 Route::get('/plant-consumption', 'PlantConsumptionController@index');
+
