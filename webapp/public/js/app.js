@@ -88301,93 +88301,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuetify/dist/vuetify.min.css */ "./node_modules/vuetify/dist/vuetify.min.css");
 /* harmony import */ var vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vuetify_dist_vuetify_min_css__WEBPACK_IMPORTED_MODULE_2__);
 !(function webpackMissingModule() { var e = new Error("Cannot find module '@mdi/font/css/materialdesignicons.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/AllergyIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/CareplansIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/ImmunizationsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/LabIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/MedicationIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/ProblemsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/RecordsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/VitalsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-
-
-
- // Custom icons
-
-
-
-
-
 
 
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify__WEBPACK_IMPORTED_MODULE_1___default.a);
-/* harmony default export */ __webpack_exports__["default"] = (new vuetify__WEBPACK_IMPORTED_MODULE_1___default.a({
-  icons: {
-    iconfont: 'mdi',
-    // default - only for display purposes
-    values: {
-      allergies: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/AllergyIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      careplans: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/CareplansIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      immunizations: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/ImmunizationsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      lab: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/LabIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      medication: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/MedicationIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      problems: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/ProblemsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      records: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/RecordsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      },
-      vitals: {
-        component: !(function webpackMissingModule() { var e = new Error("Cannot find module '../icons/VitalsIcon.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
-      }
-    }
-  },
-  breakpoint: {
-    // Breakpoints
-    xs: true,
-    sm: true,
-    md: true,
-    lg: true,
-    xl: true,
-    // Conditionals
-    xsOnly: true,
-    smOnly: true,
-    smAndDown: true,
-    smAndUp: true,
-    mdOnly: true,
-    mdAndDown: true,
-    mdAndUp: true,
-    lgOnly: true,
-    lgAndDown: true,
-    lgAndUp: true,
-    xlOnly: true,
-    // Current breakpoint name (e.g. 'md')
-    // name: string
-    // Dimensions
-    // height: number
-    // width: number,
-    thresholds: {
-      xs: 340,
-      sm: 540,
-      md: 800,
-      lg: 960,
-      xl: 1280
-    },
-    scrollBarWidth: 24
-  }
-}));
+/* harmony default export */ __webpack_exports__["default"] = (new vuetify__WEBPACK_IMPORTED_MODULE_1___default.a({}));
 
 /***/ }),
 
