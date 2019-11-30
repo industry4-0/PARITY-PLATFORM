@@ -2012,19 +2012,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     source: String
@@ -38298,7 +38285,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "a",
-              { attrs: { href: "/producers" } },
+              { attrs: { href: "/producers/create" } },
               [
                 _c(
                   "v-list-item",
@@ -38442,26 +38429,8 @@ var render = function() {
         [
           _c(
             "v-container",
-            { staticClass: "fill-height", attrs: { fluid: "" } },
-            [
-              _c(
-                "v-row",
-                { attrs: { align: "center", justify: "center" } },
-                [
-                  _c(
-                    "v-col",
-                    { staticClass: "shrink" },
-                    [
-                      _c("v-tooltip", { attrs: { right: "" } }),
-                      _vm._v(" "),
-                      _c("v-tooltip", { attrs: { right: "" } })
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
+            { attrs: { fluid: "", "fill-height": "" } },
+            [_c("v-layout", [_vm._t("default")], 2)],
             1
           )
         ],
