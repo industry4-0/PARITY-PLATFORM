@@ -38701,7 +38701,7 @@ var render = function() {
               return !!v || "You must agree to continue!"
             }
           ],
-          label: "Do you agree?",
+          label: "I Agree with Terms and Conditions of Parity",
           required: ""
         },
         model: {
