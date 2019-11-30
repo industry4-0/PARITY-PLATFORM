@@ -26,3 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('producers', 'ProducerController');
 
 Route::resource('buyers', 'BuyerController');
+
+Route::get('/matchmaking', 'MatchmakingController@index');
+
+Route::get('/plant-consumption', 'PlantConsumptionController@index');

@@ -36,13 +36,23 @@
             </v-list-item-content>
           </v-list-item>
         </a>
-        <a href="/home">
+        <a href="/plant-consumption">
           <v-list-item link>
             <v-list-item-action>
               <v-icon>mdi-view-dashboard</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Dashboard</v-list-item-title>
+              <v-list-item-title>Plant Consumption</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </a>
+        <a href="/matchmaking">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>find_replace</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Matchmaking</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </a>
