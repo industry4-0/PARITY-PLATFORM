@@ -55,6 +55,28 @@
       </v-col>
     </v-row>
 
+    <v-row>
+      <v-col cols="4">
+        <v-subheader><p>Location</p></v-subheader>
+      </v-col>
+      <v-col cols="8">
+        <v-overflow-btn
+          class="my-2"
+          :items="locations"
+          label="Locations"
+          target="#dropdown-example"
+        ></v-overflow-btn>
+      </v-col>
+    </v-row>
+
+  <v-text-field
+      v-model="company"
+      :counter="10"
+      :rules="nameRules"
+      label="Management Company"
+      required
+    ></v-text-field>
+
     <v-checkbox
       v-model="checkbox"
       :rules="[v => !!v || 'You must agree to continue!']"
@@ -109,7 +131,9 @@
       ],
       capacity: '',
       anexp: '',
+      locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
       checkbox: false,
+      company: '',
     }),
 
     methods: {

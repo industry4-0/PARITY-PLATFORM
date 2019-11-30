@@ -2137,6 +2137,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2157,7 +2179,9 @@ __webpack_require__.r(__webpack_exports__);
       items: ['Solar', 'Wind'],
       capacity: '',
       anexp: '',
-      checkbox: false
+      locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
+      checkbox: false,
+      company: ''
     };
   },
   methods: {
@@ -38608,6 +38632,51 @@ var render = function() {
         ],
         1
       ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "4" } },
+            [_c("v-subheader", [_c("p", [_vm._v("Location")])])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "8" } },
+            [
+              _c("v-overflow-btn", {
+                staticClass: "my-2",
+                attrs: {
+                  items: _vm.locations,
+                  label: "Locations",
+                  target: "#dropdown-example"
+                }
+              })
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("v-text-field", {
+        attrs: {
+          counter: 10,
+          rules: _vm.nameRules,
+          label: "Management Company",
+          required: ""
+        },
+        model: {
+          value: _vm.company,
+          callback: function($$v) {
+            _vm.company = $$v
+          },
+          expression: "company"
+        }
+      }),
       _vm._v(" "),
       _c("v-checkbox", {
         attrs: {
