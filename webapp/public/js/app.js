@@ -2047,6 +2047,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2159,6 +2161,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2187,6 +2190,19 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     validate: function validate() {
       if (this.$refs.form.validate()) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/producers', {
+          'name': this.name,
+          'email': this.email,
+          'select': this.select,
+          'capacity': this.capacity,
+          'anexp': this.anexp,
+          'locations': this.locations,
+          'checkbox': this.checkbox,
+          'company': this.company
+        }).then(function (res) {
+          console.log(res.data);
+          location.reload();
+        });
         this.snackbar = true;
       }
     },

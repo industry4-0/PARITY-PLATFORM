@@ -111,6 +111,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
   export default {
     data: () => ({
       valid: true,
@@ -139,6 +141,20 @@
     methods: {
       validate () {
         if (this.$refs.form.validate()) {
+          axios.post('/producers', {
+          'name': this.name,
+          'email': this.email,
+          'select': this.select,
+          'capacity': this.capacity,
+          'anexp': this.anexp,
+          'locations': this.locations,
+          'checkbox': this.checkbox,
+          'company': this.company
+        }).then(res => {
+          console.log(res.data)
+          location.reload();
+        })
+
           this.snackbar = true
         }
       },
