@@ -26,12 +26,40 @@
 				</v-flex>
 			</v-container>
 		</v-card>
+
+		<v-flex xs12 mt-4>
+			<v-card>
+				<canvas id="plant-chart"></canvas>
+			</v-card>
+		</v-flex>
   </div>
 </template>
 
 <script>
-export default {
+import Chart from 'chart.js'
+import consumptionChartData from './plant-data.js';
 
+export default {  
+  data() {
+    return {
+      consumptionData: consumptionChartData,
+    }
+  },
+
+  mounted() {
+    this.createChart('plant-chart', this.consumptionData);
+  },
+
+  methods: {
+    createChart(chartId, chartData) {
+      const ctx = document.getElementById(chartId);
+      const myChart = new Chart(ctx, {
+        type: chartData.type,
+        data: chartData.data,
+        options: chartData.options,
+      });
+    }
+  } 
 }
 </script>
 
