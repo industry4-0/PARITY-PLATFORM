@@ -2425,6 +2425,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2442,11 +2443,12 @@ __webpack_require__.r(__webpack_exports__);
       }, function (v) {
         return /.+@.+\..+/.test(v) || 'E-mail must be valid';
       }],
-      select: null,
+      technology: null,
       items: ['Solar', 'Wind'],
       capacity: '',
       anexp: '',
-      locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
+      locations: null,
+      locs: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
       checkbox: false,
       company: ''
     };
@@ -39285,9 +39287,16 @@ var render = function() {
               _c("v-overflow-btn", {
                 staticClass: "my-2",
                 attrs: {
-                  items: _vm.locations,
+                  items: _vm.locs,
                   label: "Locations",
                   target: "#dropdown-example"
+                },
+                model: {
+                  value: _vm.locations,
+                  callback: function($$v) {
+                    _vm.locations = $$v
+                  },
+                  expression: "locations"
                 }
               })
             ],

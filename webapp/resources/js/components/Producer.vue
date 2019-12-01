@@ -61,8 +61,9 @@
       </v-col>
       <v-col cols="8">
         <v-overflow-btn
+          v-model="locations"
           class="my-2"
-          :items="locations"
+          :items="locs"
           label="Locations"
           target="#dropdown-example"
         ></v-overflow-btn>
@@ -126,14 +127,15 @@ import axios from 'axios'
         v => !!v || 'E-mail is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
-      select: null,
+      technology: null,
       items: [
         'Solar',
         'Wind',
       ],
       capacity: '',
       anexp: '',
-      locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
+      locations: null,
+      locs: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
       checkbox: false,
       company: '',
     }),
