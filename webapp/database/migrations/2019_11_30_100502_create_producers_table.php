@@ -15,7 +15,8 @@ class CreateProducersTable extends Migration
     {
         Schema::create('producers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('producer_name');
+            $table->string('project_name');
+            $table->bigInteger('user_id')->unsigned()->index();
             $table->enum('technology', ['wind', 'solar']);
             $table->integer('capacity');
             $table->integer('anual_expect_prod');
