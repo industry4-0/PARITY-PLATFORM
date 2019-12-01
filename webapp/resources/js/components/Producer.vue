@@ -61,7 +61,7 @@
       </v-col>
       <v-col cols="8">
         <v-overflow-btn
-          v-model="locations"
+          v-model="location"
           class="my-2"
           :items="locs"
           label="Locations"
@@ -149,7 +149,7 @@ import axios from 'axios'
           'technology': this.technology,
           'capacity': this.capacity,
           'anexp': this.anexp,
-          'locations': this.locations,
+          'location': this.location,
           'checkbox': this.checkbox,
           'company': this.company
         }).then(res => {
