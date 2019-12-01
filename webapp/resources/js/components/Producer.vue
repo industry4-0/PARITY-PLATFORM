@@ -29,7 +29,7 @@
 
     <v-row>
       <v-col cols="4">
-        <v-subheader>Capcity</v-subheader>
+        <v-subheader>Capacity</v-subheader>
       </v-col>
       <v-col cols="8">
         <v-text-field

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Producer;
+use App\User;
 use Illuminate\Http\Request;
 
 class ProducerController extends Controller
@@ -16,7 +17,7 @@ class ProducerController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -51,7 +52,7 @@ class ProducerController extends Controller
             ->id;
 
         $producer = Producer::Create([
-            'project_name' => $request->input('project_name'),
+            'project_name' => $request->input('name'),
             'user_id' => $user_id,
             'technology' => strtolower($request->input('technology')),
             'capacity' => $request->input('capacity'),
