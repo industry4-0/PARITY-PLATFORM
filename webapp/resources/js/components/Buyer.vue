@@ -20,24 +20,9 @@
       required
     ></v-text-field>
 
-    <!-- <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-    ></v-text-field> -->
-
-    <!-- <v-select
-      v-model="select"
-      :items="items"
-      :rules="[v => !!v || 'Item is required']"
-      label="Technology"
-      required
-    ></v-select> -->
-
     <v-row>
       <v-col cols="4">
-        <v-subheader>Capcity</v-subheader>
+        <v-subheader>Capacity</v-subheader>
       </v-col>
       <v-col cols="8">
         <v-text-field
@@ -70,6 +55,7 @@
       <v-col cols="8">
         <v-overflow-btn
           class="my-2"
+          v-model="location"
           :items="locations"
           label="Locations"
           target="#dropdown-example"
@@ -132,6 +118,7 @@ import axios from 'axios'
       capacity: '',
       anexp: '',
       locations: ['Αττική', 'Στερεά Ελλάδα', 'Πελλοπόνησος', 'Μακεδονία'],
+      location: "",
       checkbox: false,
       company: '',
     }),
@@ -143,7 +130,7 @@ import axios from 'axios'
           'name': this.name,
           'capacity': this.capacity,
           'anexp': this.anexp,
-          'locations': this.locations,
+          'location': this.location,
           'checkbox': this.checkbox,
           'company': this.company
         }).then(res => {

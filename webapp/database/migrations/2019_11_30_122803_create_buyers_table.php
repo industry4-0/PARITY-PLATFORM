@@ -16,9 +16,11 @@ class CreateBuyersTable extends Migration
         Schema::create('buyers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('plant_name');
+            $table->bigInteger('user_id')->unsigned()->index();
             $table->integer('plant_capacity');  // in kW
             $table->integer('annual_demand');  // in MWh
             $table->string('location');
+            $table->string('management_company');
             $table->timestamps();
         });
     }

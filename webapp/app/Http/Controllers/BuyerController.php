@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Buyer;
+use App\User;
+use Auth;
 use Illuminate\Http\Request;
 
 class BuyerController extends Controller
@@ -45,7 +47,16 @@ class BuyerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $buyer = Buyer::create([
+            'plant_name' => $request->input('name'),
+            'user_id' => Auth::user()->id,
+            'plant_capacity' => $request->input('capacity'),
+            'annual_demand' => $request->input('anexp'),
+            'location' => $request->input('location'),
+            'management_company' => $request->input('company'),
+        ]);
+
+        return $buyer;
     }
 
     /**
