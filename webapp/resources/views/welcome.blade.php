@@ -5,8 +5,8 @@
 <style>
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(157, 74, 0, 0.7);
-  --left-button-hover-color: rgba(157, 74, 0, 0.7);
+  --left-bg-color: rgba(157, 74, 0, 0.5);
+  --left-button-hover-color: rgba(157, 74, 0, 0.5);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
