@@ -2457,7 +2457,7 @@ __webpack_require__.r(__webpack_exports__);
         axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/producers', {
           'name': this.name,
           'email': this.email,
-          'select': this.select,
+          'technology': this.technology,
           'capacity': this.capacity,
           'anexp': this.anexp,
           'locations': this.locations,
@@ -39198,11 +39198,11 @@ var render = function() {
           required: ""
         },
         model: {
-          value: _vm.select,
+          value: _vm.technology,
           callback: function($$v) {
-            _vm.select = $$v
+            _vm.technology = $$v
           },
-          expression: "select"
+          expression: "technology"
         }
       }),
       _vm._v(" "),
