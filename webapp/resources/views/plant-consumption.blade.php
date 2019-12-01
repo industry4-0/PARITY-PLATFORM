@@ -9,7 +9,7 @@
       </v-flex>
 
       <v-flex xs12>
-        
+        <plant-consumption></plant-consumption>
       </v-flex>
     </v-layout>
   </v-container>
