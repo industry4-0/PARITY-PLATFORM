@@ -2255,13 +2255,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       producer: "",
       buyer: "",
-      fixed_cost: 0
+      fixed_cost: 0,
+      anexp: '',
+      dates: ['2019-09-10', '2019-09-20']
     };
+  },
+  computed: {
+    dateRangeText: function dateRangeText() {
+      return this.dates.join(' ~ ');
+    }
   },
   methods: {}
 });
@@ -39001,6 +39035,84 @@ var render = function() {
           expression: "fixed_cost"
         }
       }),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "4" } },
+            [_c("v-subheader", [_vm._v("Anual Expected Demand")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "8" } },
+            [
+              _c("v-text-field", {
+                attrs: { label: "", value: "1.00", suffix: "MWh" },
+                model: {
+                  value: _vm.anexp,
+                  callback: function($$v) {
+                    _vm.anexp = $$v
+                  },
+                  expression: "anexp"
+                }
+              })
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "6" } },
+            [
+              _c("v-date-picker", {
+                attrs: { range: "" },
+                model: {
+                  value: _vm.dates,
+                  callback: function($$v) {
+                    _vm.dates = $$v
+                  },
+                  expression: "dates"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "6" } },
+            [
+              _c("v-text-field", {
+                attrs: {
+                  label: "Date range",
+                  "prepend-icon": "event",
+                  readonly: ""
+                },
+                model: {
+                  value: _vm.dateRangeText,
+                  callback: function($$v) {
+                    _vm.dateRangeText = $$v
+                  },
+                  expression: "dateRangeText"
+                }
+              }),
+              _vm._v("\n    model: " + _vm._s(_vm.dates) + "\n  ")
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-btn",
