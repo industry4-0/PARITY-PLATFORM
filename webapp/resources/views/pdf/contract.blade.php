@@ -46,7 +46,7 @@
   "font-family:Times New Roman" size="2"><b>ABN 26 003 435 443</b></font></p>
 
   <p style="margin-top:0px;margin-bottom:0px" align="center"><font style=
-  "font-family:Times New Roman" size="2"><b>(&#65533;Manager&#65533;)</b></font></p>
+  "font-family:Times New Roman" size="2"><b>(Manager)</b></font></p>
 
   <p style="margin-top:12px;margin-bottom:0px" align="center"><font style=
   "font-family:Times New Roman" size="2"><b>and</b></font></p>
@@ -58,7 +58,7 @@
   "font-family:Times New Roman" size="2"><b>ABN [</b><b>]</b></font></p>
 
   <p style="margin-top:0px;margin-bottom:0px" align="center"><font style=
-  "font-family:Times New Roman" size="2">(<b>&#65533;Party A&#65533;</b>)</font></p>
+  "font-family:Times New Roman" size="2">(<b>Party A</b>)</font></p>
 
   <p style="margin-top:12px;margin-bottom:0px" align="center"><font style=
   "font-family:Times New Roman" size="2"><b>and</b></font></p>
@@ -72,7 +72,7 @@
   <p style="margin-top:0px;margin-bottom:0px" align="center"></p>
 
   <p style="margin-top:0px;margin-bottom:0px" align="center"><font style=
-  "font-family:Times New Roman" size="2"><b>(&#65533;Party B&#65533;)</b></font></p>
+  "font-family:Times New Roman" size="2"><b>(Party B)</b></font></p>
 
   <p style="font-size:12px;margin-top:0px;margin-bottom:0px">&nbsp;</p>
 
@@ -150,8 +150,8 @@
   <p style="margin-top:6px;margin-bottom:0px"><font style="font-family:Times New Roman"
   size="2">The purpose of this letter is to confirm the terms and conditions of the
   Transaction entered into between us on the Trade Date specified below (the
-  <b>&#65533;Transaction&#65533;</b>). This letter constitutes a
-  <b>&#65533;Confirmation&#65533;</b> as referred to in the Master Agreement specified
+  <b>Transaction</b>). This letter constitutes a
+  <b>Confirmation</b> as referred to in the Master Agreement specified
   below.</font></p>
 
   <p style="margin-top:12px;margin-bottom:0px"><font style="font-family:Times New Roman"
@@ -162,12 +162,12 @@
 
   <p style="margin-top:12px;margin-bottom:0px"><font style="font-family:Times New Roman"
   size="2">This Confirmation supplements, forms part of, and is subject to, the 1992 ISDA
-  Master Agreement dated as of [<font style="FONT-FAMILY:WINGDINGS 2">&#65533;</font>]
-  20[<font style="FONT-FAMILY:WINGDINGS 2">&#65533;</font>], as amended, novated or
-  supplemented from time to time (the <b>&#65533;Agreement&#65533;</b>), between
-  [<font style="FONT-FAMILY:WINGDINGS 2">&#65533;</font>] ABN [] (<b>&#65533;Party A&#65533;</b>), (COMPANY
-  NAME) (<b>&#65533;Party B&#65533;</b>) and {{ $producer_name }} ABN 26 003 435 443 (the
-  <b>&#65533;Manager&#65533;</b>). All provisions contained in the Agreement govern this
+  Master Agreement dated as of [<font style="FONT-FAMILY:WINGDINGS 2"></font>]
+  20[<font style="FONT-FAMILY:WINGDINGS 2"></font>], as amended, novated or
+  supplemented from time to time (the <b>Agreement</b>), between
+  [<font style="FONT-FAMILY:WINGDINGS 2"></font>] ABN [] (<b>Party A</b>), (COMPANY
+  NAME) (<b>Party B</b>) and {{ $producer_name }} ABN 26 003 435 443 (the
+  <b>Manager</b>). All provisions contained in the Agreement govern this
   Confirmation except as expressly modified below.</font></p>
 
   <p style="margin-top:12px;margin-bottom:0px"><font style="font-family:Times New Roman"
@@ -276,7 +276,7 @@
 
         <td valign="top" colspan="3"><font style="font-family:Times New Roman" size=
         "2">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-        20[<font style="FONT-FAMILY:WINGDINGS 2">&#65533;</font>]</font></td>
+        20[<font style="FONT-FAMILY:WINGDINGS 2"></font>]</font></td>
       </tr>
 
       <tr>
@@ -1373,7 +1373,7 @@
         <td valign="bottom"><font size="1">&nbsp;&nbsp;</font></td>
 
         <td valign="top" colspan="3"><font style="font-family:Times New Roman" size=
-        "2">For each Monthly Floating Rate Payer Payment Date, the A&#65533; Equivalent
+        "2">For each Monthly Floating Rate Payer Payment Date, the A Equivalent
         of the aggregate Invested Amount of the Relevant Notes on the Distribution Date
         immediately before that Monthly Floating Rate Payer Payment Date (after taking
         into account any reductions in the Invested Amount of the Relevant Notes on that
