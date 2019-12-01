@@ -17,7 +17,7 @@
 html, body {
   padding:0;
   margin:0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Lato', 'Lato', Lato, Lato;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
