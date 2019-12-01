@@ -6,7 +6,7 @@
 :root {
   --container-bg-color: #333;
   --left-bg-color: rgba(157, 74, 0, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --left-button-hover-color: rgba(157, 74, 0, 0.7);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
@@ -77,7 +77,7 @@ h1 {
 
 .split.left {
   left:0;
-  background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
+  background: url('img/factory.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -91,7 +91,7 @@ h1 {
 
 .split.right {
   right:0;
-  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background: url('img/wind.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -169,7 +169,7 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: #EE8319;}
 
 ul.topnav li.right {float: right;}
 
@@ -182,21 +182,22 @@ ul.topnav li.right {float: right;}
 <body>
 
 <ul class="topnav">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li class="right"><a href="#about">About</a></li>
+  <li><a class="active" href="/">Parity Industry 4.0</a></li>
+  <li><a href="/consumers/create">Consumer</a></li>
+  <li><a href="/producers/create">Producer</a></li>
+  <li class="right"><a href="/register">Register</a></li>
+  <li class="right"><a href="/login">Login</a></li>
 </ul>
 
 
 <div class="container">
   <div class="split left">
-    <h1>The Designer</h1>
-    <a href="#" class="button">Read More</a>
+    <h1>Demand Centers</h1>
+    <a href="/register" class="button">Register</a>
   </div>
   <div class="split right">
-    <h1>The Programmer</h1>
-    <a href="#" class="button">Read More</a>
+    <h1>Energy Producers</h1>
+    <a href="#" class="button">Register</a>
   </div>
 </div>
 
