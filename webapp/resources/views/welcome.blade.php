@@ -5,8 +5,8 @@
 <style>
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(157, 74, 0, 0.7);
-  --left-button-hover-color: rgba(157, 74, 0, 0.7);
+  --left-bg-color: rgba(157, 74, 0, 0.5);
+  --left-button-hover-color: rgba(157, 74, 0, 0.5);
   --right-bg-color: rgba(43, 43, 43, 0.8);
   --right-button-hover-color: rgba(92, 92, 92, 0.3);
   --hover-width: 75%;
@@ -183,7 +183,7 @@ ul.topnav li.right {float: right;}
 
 <ul class="topnav">
   <li><a class="active" href="/">Parity Industry 4.0</a></li>
-  <li><a href="/consumers/create">Consumer</a></li>
+  <li><a href="/buyers/create">Consumer</a></li>
   <li><a href="/producers/create">Producer</a></li>
   <li class="right"><a href="/register">Register</a></li>
   <li class="right"><a href="/login">Login</a></li>
@@ -197,7 +197,7 @@ ul.topnav li.right {float: right;}
   </div>
   <div class="split right">
     <h1>Energy Producers</h1>
-    <a href="#" class="button">Register</a>
+    <a href="/register" class="button">Register</a>
   </div>
 </div>
 

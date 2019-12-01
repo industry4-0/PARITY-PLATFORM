@@ -20,7 +20,7 @@
     ></v-text-field>
 
     <v-select
-      v-model="select"
+      v-model="technology"
       :items="items"
       :rules="[v => !!v || 'Item is required']"
       label="Technology"
@@ -144,7 +144,7 @@ import axios from 'axios'
           axios.post('/producers', {
           'name': this.name,
           'email': this.email,
-          'select': this.select,
+          'technology': this.technology,
           'capacity': this.capacity,
           'anexp': this.anexp,
           'locations': this.locations,
