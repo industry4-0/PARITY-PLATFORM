@@ -8,6 +8,16 @@ use Illuminate\Http\Request;
 class ProducerController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -35,7 +45,20 @@ class ProducerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user_id = User::where('email', $request->input('email'))
+            ->select('id')
+            ->first()
+            ->id;
+
+        $producer = Producer::Create([
+            'project_name' => $request->input('project_name'),
+            'user_id' => $user_id,
+            'technology' => strtolower($request->input('technology')),
+            'capacity' => $request->input('capacity'),
+            'anual_expect_prod' => $request->input('anexp'),
+            'location' => $request->input('location'),
+            'management_company' => $request->input('company'),
+        ]);
     }
 
     /**
