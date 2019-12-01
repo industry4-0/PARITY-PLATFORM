@@ -22,6 +22,8 @@ Vue.component('app', require('./components/App.vue').default);
 Vue.component('producer', require('./components/Producer.vue').default);
 Vue.component('matchmaking', require('./components/Matchmaking.vue').default);
 Vue.component('buyer', require('./components/Buyer.vue').default);
+Vue.component('dashboard', require('./components/Dashboard.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
